@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&family=Sansita&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <style>
+        .tab {
+            overflow:hidden;
+            text-align:right;
+            /* border:1px solid #ccc; */
+            /* background-color:#f1f1f1; */
+        }
+        .tab button {
+            background-color:inherit;
+            /* float:right; */
+            border:none;
+            outline:none;
+            cursor:pointer;
+            padding:14px 16px;
+            transition:0.2s;
+            display:inline;
+            font-family:'Ubuntu Condensed', sans-serif;
+            font-size:17px;
+        }
+        .tab button:hover {
+            text-decoration:underline;
+            background-image: url(/img/heart.png);
+            background-size:contain;
+            background-position:center;
+            background-repeat:no-repeat;
+        }
+        .tab button.active {
+            text-decoration:underline;
+            background-image: url(/img/heart.png);
+            background-size:contain;
+            background-position:center;
+            background-repeat:no-repeat;
+        }
+        .tabcontent {
+            display:none;
+            padding:6px 12px;
+            /* border:1px solid #ccc;
+            border-top:none; */
+            font-family:'Ubuntu Condensed', sans-serif;
+        }
+        .center {
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .text-center {
+            text-align:center;
+        }
+        .grow img {
+            object-fit:contain;
+            transition:0.4s ease;
+        }
+        .grow img:hover {
+            -webkit-transfrom:scale(1.2);
+            -ms-transform:scale(1.2);
+            transform:scale(1.2);
+            transition:0.4s ease;
+            cursor:pointer;
+        }
+        .picwrapper {
+            text-align:center;
+            /* width:780px;
+            margin:0 auto; */
+        }
+        .pic {
+            display:inline-block;
+            /* float:left;
+            margin:0 5px; */
+        }
+        .return button {
+            position:absolute;
+            left:1%;
+            bottom:3%;
+            background-color:inherit;
+            border:none;
+            outline:none;
+            cursor:pointer;
+            transition:0.3s;
+            display:inline;
+            font-family:'Ubuntu Condensed', sans-serif;
+            font-size:17px;
+        }
+        .return a {
+            text-decoration:none;
+            color:black;
+        }
+        .return a:hover {
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(255, 238, 222);">
+    <div class="tab">
+        <button class="tablinks" onclick="openLink(event, 'About')">About</button>
+        <button class="tablinks" onclick="openLink(event, 'Interests')">Interests</button>
+        <button class="tablinks" onclick="openLink(event, 'Contacts')">Contacts</button>
+    </div>
+
+    <div id="About" class="tabcontent">
+        <img src="/img/IMG_3259.JPG" width="200" height="200" class="center" style="border-radius:50%;">
+        <div class="text-center">
+            <h1>Hello!</h1>
+            <h2>My name is Katie Park.</h2>
+            <p>
+                I am a junior at University of Texas at Dallas. I am majoring in Computer Science. <br />
+                I am very meticulous and responsible for my duties. I always think positively! <br />
+                I am currently building up my computer coding skills as I go to university. <br/>
+                My dream is to be a person who makes web or apps that can make many people around the world more safe and comfortable. <br />
+                Thank you so much for visiting my website! :)
+            </p>
+        </div>
+    </div>
+    <div id="Interests" class="tabcontent">
+        <h3 class="text-center">Photography</h3>
+        <div class="grow">
+            <div class="picwrapper">
+                <div class="pic"><img src="/img/IMG_4762.jpeg" width="200" height="200" style="object-fit:cover"></div>
+                <div class="pic"><img src="/img/IMG_5045.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_5038.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_8329.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_7963.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_3473.jpg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_6925.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_2926.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_2854.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_2080.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_1867.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_4417.jpeg" width="200" height="200"></div>
+            </div>
+        </div>
+        <h3 class="text-center">Travel</h3>
+        <div class="grow">
+            <div class="picwrapper">
+                <div class="pic"><img src="/img/IMG_3853.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_7895.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_1401.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_3503.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_5969.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_3472.jpg" width="200" height="200"></div>
+            </div>
+        </div>
+        <h3 class="text-center">Painting</h3>
+        <div class="grow">
+            <div class="picwrapper">
+                <div class="pic"><img src="/img/IMG_2756.jpeg" width="250" height="250"></div>
+                <div class="pic"><img src="/img/IMG_2783.jpeg" width="250" height="250"></div>
+                <div class="pic"><img src="/img/IMG_5677.jpeg" width="250" height="250"></div>
+            </div>
+        </div>
+        <h3 class="text-center">Baking</h3>
+        <div class="grow">
+            <div class="picwrapper">
+                <div class="pic"><img src="/img/IMG_0628.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_4207.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_4236.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_4242.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_5474.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_5428.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_0611.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_5706.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_5387.jpeg" width="200" height="200"></div>
+                <div class="pic"><img src="/img/IMG_4239.jpeg" width="200" height="200" style="object-fit:cover"></div>
+                <div class="pic"><img src="/img/IMG_0107.jpeg" width="200" height="200" style="object-fit:cover"></div>
+                <div class="pic"><img src="/img/IMG_7244.jpeg" width="200" height="200"></div>
+            </div>
+
+        </div>
+    </div>
+    <div id="Contacts" class="tabcontent">
+        <img src="/img/come_see_me.jpg" width="250" height="250" class="center">
+        <div class="text-center">
+            <p style="font-size:18px;">Phone #: 469-216-0675</p>
+            <p style="font-size:18px;">Email: pk801018@gmail.com</p>
+        </div>
+        <div class="picwrapper">
+            <div class="pic"><a href="https://www.linkedin.com/in/katie-park-00549a1b8" target="_blank"><img src="/img/LinkedIn_logo.png" width="40" height="40"></a></div>
+            <div class="pic"><a href="https://www.instagram.com/katiee_0801/" target="_blank"><img src="/img/Instagram_logo.png" width="40" height="40"></a></div>
+            <div class="pic"><a href="https://www.facebook.com/pki801" target="_blank"><img src="/img/Facebook_logo.png" width="40" height="40"></a></div>
+        </div>
+    </div>
+
+    <div class="return">
+        <button><a href="http://localhost/index.html">
+            <img src="/img/return.png" width="15" height="15"> Return to homepage</a></button>
+    </div>
+
+    <script>
+        function openLink(evt, tabName) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for(i=0; i<tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for(i=0; i<tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
